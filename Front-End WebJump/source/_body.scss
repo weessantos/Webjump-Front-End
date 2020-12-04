@@ -1,0 +1,262 @@
+#page-path{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    @extend .page-size;
+}
+
+#page-path{
+    @extend .page-size;
+}
+
+.page-path-home{
+    display: flex;
+    flex: row;
+    color: black;
+    @extend .mini-text;
+}
+
+.page-path-current{
+    color: red;
+    @extend .mini-text;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.body-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    @extend .page-size;
+}
+
+#left-menu{
+    width: 250px;
+    height: 400px;
+    padding: 10px 0px 10px 15px;
+    @extend .border-gray;
+}
+
+.left-menu-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #DC143C;
+    margin-bottom: 10px;
+}
+
+.left-menu-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.left-menu-subtitle{
+    font-weight: 600;
+    color: #31A5A1;
+    margin-bottom: 10px;
+}
+
+.list-menu{
+    color: #6D6D6D;
+    margin-bottom: 5px;
+}
+
+.left-menu-list-color{
+    width: 60%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.color-block{
+    width: 32%;
+    height: 60%;
+}
+
+.color-red{
+    @extend .color-block;
+    background-color: #DC143C;
+}
+
+.color-orange{
+    @extend .color-block;
+    background-color: #FF8C00;
+}
+
+.color-blue{
+    @extend .color-block;
+    background-color: #31a5a1;
+}
+
+.product-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    @extend .page-size;
+}
+
+.product-header{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+}
+
+.product-header-title{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.product-main-title{
+    font-size: 2rem;
+    color: #DC143C;
+}
+
+.page-path-title{
+    @extend .product-main-title;
+}
+
+.product-sub-title{
+    @extend .product-main-title;
+}
+
+.product-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    @extend .border-gray;
+}
+
+.product-filter-left{
+    width: 30%;
+}
+
+.product-filter-right{
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 70%;
+}
+
+.filter-text{
+    font-weight: 600;
+    color: #6D6D6D;
+}
+
+.search-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: #ffff;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    @extend .border-gray;
+}
+
+.search-order-icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.menu-grid-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.menu-list-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.product-commerce{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    justify-items: center;
+    height: auto;
+    margin-top: 20px;
+    width: 95%;
+    
+    > div[id*='product-div-']{
+        display: flex;
+        flex-direction: column;
+        max-width: 150px;
+        max-height: 400px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+    }
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+    @extend .border-gray;
+}
+
+.product-name{
+    color: #6D6D6D;
+    height: 60px;
+    margin: 10px 0 10px 0;
+}
+
+.product-price{
+    color: #DC143C;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.product-buy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #2e8885;
+    background-color: #31a5a1;
+    color: white;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    color: #DC143C;
+}

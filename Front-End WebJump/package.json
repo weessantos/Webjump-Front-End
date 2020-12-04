@@ -1,0 +1,20 @@
+{
+  "name": "webjump-assessment-frontend-158c4aeb6aa5",
+  "version": "1.0.0",
+  "description": "Criamos este teste para avaliar seus conhecimentos e habilidades frontend (HTML, CSS e JavaScript).",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "-": "0.0.1",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
